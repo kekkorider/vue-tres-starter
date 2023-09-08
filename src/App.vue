@@ -1,33 +1,27 @@
 <template>
   <TresCanvas window-size>
-    <TresPerspectiveCamera />
+    <TresPerspectiveCamera :position="[0, 1.7, 7]" :look-at="[0, 0, 0]" />
     <OrbitControls />
 
-    <TresMesh ref="donutRef">
-      <TresTorusGeometry :args="[1, 0.5, 16, 32]" />
-      <TresMeshNormalMaterial color="orange" />
-    </TresMesh>
+    <SampleBox :position="[-2, 0, 0]" />
   </TresCanvas>
 </template>
 
 <script setup>
 import { useRenderLoop } from '@tresjs/core'
 import { OrbitControls } from '@tresjs/cientos'
-import { shallowRef } from 'vue'
+
+import SampleBox from '@/components/SampleBox.vue'
 
 //
 // Refs / States
 //
 const { onLoop } = useRenderLoop()
-const donutRef = shallowRef(null)
 
 //
 // Lifecycle
 //
 onLoop(({ elapsed }) => {
-  donutRef.value.rotation.y = elapsed * 0.652
-  donutRef.value.rotation.x = elapsed * 0.442
+  // Do stuff
 })
 </script>
-
-<style scoped></style>

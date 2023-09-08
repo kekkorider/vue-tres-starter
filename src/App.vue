@@ -1,47 +1,33 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <TresCanvas window-size>
+    <TresPerspectiveCamera />
+    <OrbitControls />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+    <TresMesh ref="donutRef">
+      <TresTorusGeometry :args="[1, 0.5, 16, 32]" />
+      <TresMeshNormalMaterial color="orange" />
+    </TresMesh>
+  </TresCanvas>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
+<script setup>
+import { useRenderLoop } from '@tresjs/core'
+import { OrbitControls } from '@tresjs/cientos'
+import { shallowRef } from 'vue'
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+//
+// Refs / States
+//
+const { onLoop } = useRenderLoop()
+const donutRef = shallowRef(null)
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+//
+// Lifecycle
+//
+onLoop(({ elapsed }) => {
+  donutRef.value.rotation.y = elapsed * 0.652
+  donutRef.value.rotation.x = elapsed * 0.442
+})
+</script>
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+<style scoped></style>

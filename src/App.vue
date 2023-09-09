@@ -9,6 +9,8 @@
       <Suzanne :position="[2, 0, 0]" />
     </Suspense>
   </TresCanvas>
+
+  <Credits />
 </template>
 
 <script setup>
@@ -17,6 +19,7 @@ import { OrbitControls } from '@tresjs/cientos'
 
 import SampleBox from '@/components/SampleBox.vue'
 import Suzanne from '@/components/Suzanne/index.vue'
+import Credits from '@/components/Credits.vue'
 
 //
 // Refs / States

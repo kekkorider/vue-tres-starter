@@ -4,6 +4,10 @@
     <OrbitControls />
 
     <SampleBox :position="[-2, 0, 0]" />
+
+    <Suspense>
+      <Suzanne :position="[2, 0, 0]" />
+    </Suspense>
   </TresCanvas>
 </template>
 
@@ -12,6 +16,7 @@ import { useRenderLoop } from '@tresjs/core'
 import { OrbitControls } from '@tresjs/cientos'
 
 import SampleBox from '@/components/SampleBox.vue'
+import Suzanne from '@/components/Suzanne/index.vue'
 
 //
 // Refs / States

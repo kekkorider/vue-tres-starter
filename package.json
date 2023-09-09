@@ -1,6 +1,7 @@
 {
   "name": "vue-tres-starter",
   "author": "Francesco Michelini<hello@francescomichelini.com>",
+  "type": "module",
   "engines": {
     "node": "18"
   },
@@ -28,6 +29,7 @@
     "eslint": "^8.46.0",
     "eslint-plugin-vue": "^9.16.1",
     "prettier": "^3.0.0",
-    "vite": "^4.4.9"
+    "vite": "^4.4.9",
+    "vite-plugin-glsl": "^1.1.2"
   }
 }

@@ -15,21 +15,21 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@tresjs/cientos": "^3.3.0",
-    "@tresjs/core": "^3.2.2",
+    "@tresjs/cientos": "^3.4.1",
+    "@tresjs/core": "^3.3.0",
     "gsap": "^3.12.2",
     "pinia": "^2.1.6",
-    "three": "^0.156.1",
+    "three": "^0.157.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.4.0",
-    "@vitejs/plugin-vue": "^4.3.4",
+    "@rushstack/eslint-patch": "^1.5.1",
+    "@vitejs/plugin-vue": "^4.4.0",
     "@vue/eslint-config-prettier": "^8.0.0",
-    "eslint": "^8.49.0",
+    "eslint": "^8.50.0",
     "eslint-plugin-vue": "^9.17.0",
     "prettier": "^3.0.3",
-    "vite": "^4.4.9",
+    "vite": "^4.4.11",
     "vite-plugin-glsl": "^1.1.2"
   }
 }

@@ -15,7 +15,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@tresjs/cientos": "^3.4.1",
+    "@tresjs/cientos": "^3.5.0",
     "@tresjs/core": "^3.3.0",
     "gsap": "^3.12.2",
     "pinia": "^2.1.6",
@@ -26,7 +26,7 @@
     "@rushstack/eslint-patch": "^1.5.1",
     "@vitejs/plugin-vue": "^4.4.0",
     "@vue/eslint-config-prettier": "^8.0.0",
-    "eslint": "^8.50.0",
+    "eslint": "^8.51.0",
     "eslint-plugin-vue": "^9.17.0",
     "prettier": "^3.0.3",
     "vite": "^4.4.11",

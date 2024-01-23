@@ -15,7 +15,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@tresjs/cientos": "^3.6.0",
+    "@tresjs/cientos": "^3.7.0",
     "@tresjs/core": "^3.6.1",
     "gsap": "^3.12.5",
     "pinia": "^2.1.7",

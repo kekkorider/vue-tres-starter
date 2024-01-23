@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@tresjs/cientos':
-    specifier: ^3.6.0
-    version: 3.6.0(@tresjs/core@3.6.1)(three@0.160.1)(tweakpane@4.0.1)(vue@3.4.15)
+    specifier: ^3.7.0
+    version: 3.7.0(@tresjs/core@3.6.1)(three@0.160.1)(tweakpane@4.0.1)(vue@3.4.15)
   '@tresjs/core':
     specifier: ^3.6.1
     version: 3.6.1(three@0.160.1)(vue@3.4.15)
@@ -489,8 +489,8 @@ packages:
     resolution: {integrity: sha512-Jh4t/593gxs0lJZ/z3NnasKlplXT2f+4y/LZYuaKZW5KAaiVFL/fThhs+17EbUd53jUVJ0QudYCBGbN/psvaqg==}
     dev: true
 
-  /@tresjs/cientos@3.6.0(@tresjs/core@3.6.1)(three@0.160.1)(tweakpane@4.0.1)(vue@3.4.15):
-    resolution: {integrity: sha512-VM6LamAFlcKufbrtbYN71ncuAw2JPVfKUC6Ey9+scq05qvHdQM8fU0WoppNZEtmIL7m2aUqroOZRnr9LXyZPCg==}
+  /@tresjs/cientos@3.7.0(@tresjs/core@3.6.1)(three@0.160.1)(tweakpane@4.0.1)(vue@3.4.15):
+    resolution: {integrity: sha512-et5SNCgRZGb6/NU7CQbrn5E31wr9qq/I8v3YvX7TXWw+RmLmP6UBh4Ctr/dNNpsXwXnUr9oJ6KtFbJU2Gwmd5Q==}
     peerDependencies:
       '@tresjs/core': '>=3.2'
       three: '>=0.133'
@@ -498,13 +498,13 @@ packages:
       vue: '>=3.3'
     dependencies:
       '@tresjs/core': 3.6.1(three@0.160.1)(vue@3.4.15)
-      '@vueuse/core': 10.5.0(vue@3.4.15)
+      '@vueuse/core': 10.7.0(vue@3.4.15)
       camera-controls: 2.7.2(three@0.160.1)
-      stats-gl: 1.0.5
+      stats-gl: 2.0.1
       stats.js: 0.17.0
       three: 0.160.1
       three-custom-shader-material: 5.4.0(three@0.160.1)
-      three-stdlib: 2.28.3(three@0.160.1)
+      three-stdlib: 2.29.4(three@0.160.1)
       tweakpane: 4.0.1
       vue: 3.4.15
     transitivePeerDependencies:
@@ -537,10 +537,6 @@ packages:
 
   /@types/offscreencanvas@2019.7.1:
     resolution: {integrity: sha512-+HSrJgjBW77ALieQdMJvXhRZUIRN1597L+BKvsyeiIlHHERnqjcuOLyodK3auJ3Y3zRezNKtKAhuQWYJfEgFHQ==}
-    dev: false
-
-  /@types/web-bluetooth@0.0.18:
-    resolution: {integrity: sha512-v/ZHEj9xh82usl8LMR3GarzFY1IrbXJw5L4QfQhokjRV91q+SelFqxQWSep1ucXEZ22+dSTwLFkXeur25sPIbw==}
     dev: false
 
   /@types/web-bluetooth@0.0.20:
@@ -648,18 +644,6 @@ packages:
   /@vue/shared@3.4.15:
     resolution: {integrity: sha512-KzfPTxVaWfB+eGcGdbSf4CWdaXcGDqckoeXUh7SB3fZdEtzPCK2Vq9B/lRRL3yutax/LWITz+SwvgyOxz5V75g==}
 
-  /@vueuse/core@10.5.0(vue@3.4.15):
-    resolution: {integrity: sha512-z/tI2eSvxwLRjOhDm0h/SXAjNm8N5ld6/SC/JQs6o6kpJ6Ya50LnEL8g5hoYu005i28L0zqB5L5yAl8Jl26K3A==}
-    dependencies:
-      '@types/web-bluetooth': 0.0.18
-      '@vueuse/metadata': 10.5.0
-      '@vueuse/shared': 10.5.0(vue@3.4.15)
-      vue-demi: 0.14.6(vue@3.4.15)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-    dev: false
-
   /@vueuse/core@10.7.0(vue@3.4.15):
     resolution: {integrity: sha512-4EUDESCHtwu44ZWK3Gc/hZUVhVo/ysvdtwocB5vcauSV4B7NiGY5972WnsojB3vRNdxvAt7kzJWE2h9h7C9d5w==}
     dependencies:
@@ -672,21 +656,8 @@ packages:
       - vue
     dev: false
 
-  /@vueuse/metadata@10.5.0:
-    resolution: {integrity: sha512-fEbElR+MaIYyCkeM0SzWkdoMtOpIwO72x8WsZHRE7IggiOlILttqttM69AS13nrDxosnDBYdyy3C5mR1LCxHsw==}
-    dev: false
-
   /@vueuse/metadata@10.7.0:
     resolution: {integrity: sha512-GlaH7tKP2iBCZ3bHNZ6b0cl9g0CJK8lttkBNUX156gWvNYhTKEtbweWLm9rxCPIiwzYcr/5xML6T8ZUEt+DkvA==}
-    dev: false
-
-  /@vueuse/shared@10.5.0(vue@3.4.15):
-    resolution: {integrity: sha512-18iyxbbHYLst9MqU1X1QNdMHIjks6wC7XTVf0KNOv5es/Ms6gjVFCAAWTVP2JStuGqydg3DT+ExpFORUEi9yhg==}
-    dependencies:
-      vue-demi: 0.14.6(vue@3.4.15)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
     dev: false
 
   /@vueuse/shared@10.7.0(vue@3.4.15):
@@ -1735,8 +1706,8 @@ packages:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
 
-  /stats-gl@1.0.5:
-    resolution: {integrity: sha512-XimMxvwnf1Qf5KwebhcoA34kcX+fWEkIl0QjNkCbu4IpoyDMMsOajExn7FIq5w569k45+LhmsuRlGSrsvmGdNw==}
+  /stats-gl@2.0.1:
+    resolution: {integrity: sha512-EhFm1AxoSBK3MflkFawZ4jmOX1dWu0nBAtCpvGxGsondEvCpsohbpRpM8pi8UAcxG5eRsDsCiRcxdH20j3Rp9A==}
     dev: false
 
   /stats.js@0.17.0:
@@ -1807,8 +1778,8 @@ packages:
       three: 0.160.1
     dev: false
 
-  /three-stdlib@2.28.3(three@0.160.1):
-    resolution: {integrity: sha512-mbKEJqDPosHZzSKdM8VurnuX1sRWFzNu6I3/v5DWNEJUA0S+03Cq5KaEwZng7ErjFp0rwwb39JdwAk8gNUbnuA==}
+  /three-stdlib@2.29.4(three@0.160.1):
+    resolution: {integrity: sha512-XNzGCrz/uAk9XoLwd35eN7dQyI4ggXZTeqjcN034YdYBpBlNO9kmLHehl/0Nw9jCelblB7jla+unHAOIyLyV6Q==}
     peerDependencies:
       three: '>=0.128.0'
     dependencies:

@@ -16,20 +16,20 @@
   },
   "dependencies": {
     "@tresjs/cientos": "^3.6.0",
-    "@tresjs/core": "^3.6.0",
-    "gsap": "^3.12.3",
+    "@tresjs/core": "^3.6.1",
+    "gsap": "^3.12.5",
     "pinia": "^2.1.7",
-    "three": "^0.159.0",
-    "vue": "^3.3.11"
+    "three": "^0.160.1",
+    "vue": "^3.4.15"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.6.0",
-    "@vitejs/plugin-vue": "^4.5.2",
-    "@vue/eslint-config-prettier": "^8.0.0",
-    "eslint": "^8.55.0",
-    "eslint-plugin-vue": "^9.19.2",
-    "prettier": "^3.1.1",
-    "vite": "^5.0.8",
+    "@rushstack/eslint-patch": "^1.7.0",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.20.1",
+    "prettier": "^3.2.4",
+    "vite": "^5.0.12",
     "vite-plugin-glsl": "^1.2.1"
   }
 }

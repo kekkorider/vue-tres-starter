@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@tresjs/cientos": "^3.6.0",
-    "@tresjs/core": "^3.6.1",
+    "@tresjs/core": "^3.7.0",
     "gsap": "^3.12.5",
     "pinia": "^2.1.7",
     "three": "^0.160.1",

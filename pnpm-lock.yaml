@@ -7,10 +7,10 @@ settings:
 dependencies:
   '@tresjs/cientos':
     specifier: ^3.6.0
-    version: 3.6.0(@tresjs/core@3.6.1)(three@0.160.1)(tweakpane@4.0.1)(vue@3.4.15)
+    version: 3.6.0(@tresjs/core@3.7.0)(three@0.160.1)(tweakpane@4.0.3)(vue@3.4.15)
   '@tresjs/core':
-    specifier: ^3.6.1
-    version: 3.6.1(three@0.160.1)(vue@3.4.15)
+    specifier: ^3.7.0
+    version: 3.7.0(three@0.160.1)(vue@3.4.15)
   gsap:
     specifier: ^3.12.5
     version: 3.12.5
@@ -489,7 +489,7 @@ packages:
     resolution: {integrity: sha512-Jh4t/593gxs0lJZ/z3NnasKlplXT2f+4y/LZYuaKZW5KAaiVFL/fThhs+17EbUd53jUVJ0QudYCBGbN/psvaqg==}
     dev: true
 
-  /@tresjs/cientos@3.6.0(@tresjs/core@3.6.1)(three@0.160.1)(tweakpane@4.0.1)(vue@3.4.15):
+  /@tresjs/cientos@3.6.0(@tresjs/core@3.7.0)(three@0.160.1)(tweakpane@4.0.3)(vue@3.4.15):
     resolution: {integrity: sha512-VM6LamAFlcKufbrtbYN71ncuAw2JPVfKUC6Ey9+scq05qvHdQM8fU0WoppNZEtmIL7m2aUqroOZRnr9LXyZPCg==}
     peerDependencies:
       '@tresjs/core': '>=3.2'
@@ -497,7 +497,7 @@ packages:
       tweakpane: '>=3.0.0'
       vue: '>=3.3'
     dependencies:
-      '@tresjs/core': 3.6.1(three@0.160.1)(vue@3.4.15)
+      '@tresjs/core': 3.7.0(three@0.160.1)(vue@3.4.15)
       '@vueuse/core': 10.5.0(vue@3.4.15)
       camera-controls: 2.7.2(three@0.160.1)
       stats-gl: 1.0.5
@@ -505,7 +505,7 @@ packages:
       three: 0.160.1
       three-custom-shader-material: 5.4.0(three@0.160.1)
       three-stdlib: 2.28.3(three@0.160.1)
-      tweakpane: 4.0.1
+      tweakpane: 4.0.3
       vue: 3.4.15
     transitivePeerDependencies:
       - '@react-three/fiber'
@@ -513,14 +513,14 @@ packages:
       - react
     dev: false
 
-  /@tresjs/core@3.6.1(three@0.160.1)(vue@3.4.15):
-    resolution: {integrity: sha512-lNOghF3bMUbSTuPgC7z4s0D6j56vQzdpRFE20cXN3t0QehlGC8p9lri70TN1Sd2snP9ceewT1HXmCws6mkye1g==}
+  /@tresjs/core@3.7.0(three@0.160.1)(vue@3.4.15):
+    resolution: {integrity: sha512-Hg6VK7RQuGiXyLlbB+7FdPyS4KERxIpnU8EO/UzmN4/Bfr6I9Kuo1F0LF+5BBFyxBPqc7sD1Dcy7Epj8We9ETg==}
     peerDependencies:
       three: '>=0.133'
       vue: '>=3.3'
     dependencies:
       '@alvarosabu/utils': 3.1.1
-      '@vueuse/core': 10.7.0(vue@3.4.15)
+      '@vueuse/core': 10.7.2(vue@3.4.15)
       three: 0.160.1
       vue: 3.4.15
     transitivePeerDependencies:
@@ -660,12 +660,12 @@ packages:
       - vue
     dev: false
 
-  /@vueuse/core@10.7.0(vue@3.4.15):
-    resolution: {integrity: sha512-4EUDESCHtwu44ZWK3Gc/hZUVhVo/ysvdtwocB5vcauSV4B7NiGY5972WnsojB3vRNdxvAt7kzJWE2h9h7C9d5w==}
+  /@vueuse/core@10.7.2(vue@3.4.15):
+    resolution: {integrity: sha512-AOyAL2rK0By62Hm+iqQn6Rbu8bfmbgaIMXcE3TSr7BdQ42wnSFlwIdPjInO62onYsEMK/yDMU8C6oGfDAtZ2qQ==}
     dependencies:
       '@types/web-bluetooth': 0.0.20
-      '@vueuse/metadata': 10.7.0
-      '@vueuse/shared': 10.7.0(vue@3.4.15)
+      '@vueuse/metadata': 10.7.2
+      '@vueuse/shared': 10.7.2(vue@3.4.15)
       vue-demi: 0.14.6(vue@3.4.15)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -676,8 +676,8 @@ packages:
     resolution: {integrity: sha512-fEbElR+MaIYyCkeM0SzWkdoMtOpIwO72x8WsZHRE7IggiOlILttqttM69AS13nrDxosnDBYdyy3C5mR1LCxHsw==}
     dev: false
 
-  /@vueuse/metadata@10.7.0:
-    resolution: {integrity: sha512-GlaH7tKP2iBCZ3bHNZ6b0cl9g0CJK8lttkBNUX156gWvNYhTKEtbweWLm9rxCPIiwzYcr/5xML6T8ZUEt+DkvA==}
+  /@vueuse/metadata@10.7.2:
+    resolution: {integrity: sha512-kCWPb4J2KGrwLtn1eJwaJD742u1k5h6v/St5wFe8Quih90+k2a0JP8BS4Zp34XUuJqS2AxFYMb1wjUL8HfhWsQ==}
     dev: false
 
   /@vueuse/shared@10.5.0(vue@3.4.15):
@@ -689,8 +689,8 @@ packages:
       - vue
     dev: false
 
-  /@vueuse/shared@10.7.0(vue@3.4.15):
-    resolution: {integrity: sha512-kc00uV6CiaTdc3i1CDC4a3lBxzaBE9AgYNtFN87B5OOscqeWElj/uza8qVDmk7/U8JbqoONLbtqiLJ5LGRuqlw==}
+  /@vueuse/shared@10.7.2(vue@3.4.15):
+    resolution: {integrity: sha512-qFbXoxS44pi2FkgFjPvF4h7c9oMDutpyBdcJdMYIMg9XyXli2meFMuaKn+UMgsClo//Th6+beeCgqweT/79BVA==}
     dependencies:
       vue-demi: 0.14.6(vue@3.4.15)
     transitivePeerDependencies:
@@ -1852,8 +1852,8 @@ packages:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: true
 
-  /tweakpane@4.0.1:
-    resolution: {integrity: sha512-1JmmGbF4h2zuFbpN1XfIWcV0kLbBUgSXpR1QtW19vJFx44asnCrufRSvd69OItOFMEWgbVtoiWM2uDPUEUKcMQ==}
+  /tweakpane@4.0.3:
+    resolution: {integrity: sha512-BlcWOAe8oe4c+k9pmLBARGdWB6MVZMszayekkixQXTgkxTaYoTUpHpwVEp+3HkoamZkomodpbBf0CkguIHTgLg==}
     dev: false
 
   /type-check@0.4.0:

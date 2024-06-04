@@ -12,7 +12,7 @@
 
 <script setup>
 import { shallowRef, onMounted, nextTick } from 'vue'
-import { useRenderLoop } from '@tresjs/core'
+import { useLoop } from '@tresjs/core'
 
 import { useGSAP } from '@/composables/useGSAP'
 
@@ -20,7 +20,7 @@ import { useGSAP } from '@/composables/useGSAP'
 // Refs
 //
 const { gsap } = useGSAP()
-const { onLoop } = useRenderLoop()
+const { onBeforeRender } = useLoop()
 
 const boxRef = shallowRef('boxRef')
 
@@ -30,7 +30,7 @@ const boxRef = shallowRef('boxRef')
 onMounted(async () => {
   await nextTick()
 
-  onLoop(({ elapsed }) => {
+  onBeforeRender(({ elapsed }) => {
     boxRef.value.rotation.y += 0.01
     boxRef.value.rotation.z += 0.0074
     boxRef.value.position.y = Math.sin(elapsed) * 0.5

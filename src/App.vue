@@ -6,7 +6,7 @@
     <SampleBox :position="[-2, 0, 0]" />
 
     <Suspense>
-      <Suzanne :position="[2, 0, 0]" />
+      <Suzanne :position="[2, 0, 0]" v-bind="suzanneProps" />
     </Suspense>
 
     <Suspense>
@@ -19,7 +19,6 @@
 
 <script setup>
 import { onMounted, nextTick, shallowReactive } from 'vue'
-import { useRenderLoop } from '@tresjs/core'
 import { OrbitControls, useTweakPane, StatsGl } from '@tresjs/cientos'
 
 import SampleBox from '@/components/SampleBox.vue'
@@ -31,7 +30,6 @@ import { useSampleStore } from '@/stores/sample'
 //
 // Refs / States
 //
-const { onLoop } = useRenderLoop()
 const { pane } = useTweakPane()
 
 const sampleStore = useSampleStore()
@@ -42,7 +40,11 @@ const config = shallowReactive({
 
 const gl = shallowReactive({
   clearColor: '#1C1C1C',
-  powerPreference: 'high-performance'
+  powerPreference: 'high-performance',
+})
+
+const suzanneProps = shallowReactive({
+  visible: true
 })
 
 //
@@ -55,9 +57,9 @@ onMounted(async () => {
   createDebugPane()
 })
 
-onLoop(({ elapsed }) => {
+// onBeforeRender(({ elapsed }) => {
   // Do stuff
-})
+// })
 
 //
 // Methods
@@ -73,6 +75,10 @@ function createDebugPane() {
 
   pane.addBinding(config, 'orbitControlsEnabled', {
     label: 'Orbit Controls enabled'
+  })
+
+  pane.addBinding(suzanneProps, 'visible', {
+    label: 'Suzanne visible'
   })
 
   pane.addBlade({

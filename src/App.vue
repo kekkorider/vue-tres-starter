@@ -19,7 +19,8 @@
 
 <script setup>
 import { onMounted, nextTick, shallowReactive } from 'vue'
-import { OrbitControls, useTweakPane, StatsGl } from '@tresjs/cientos'
+import { OrbitControls, StatsGl } from '@tresjs/cientos'
+import { Pane } from 'tweakpane'
 
 import SampleBox from '@/components/SampleBox.vue'
 import Suzanne from '@/components/Suzanne/index.vue'
@@ -30,8 +31,6 @@ import { useSampleStore } from '@/stores/sample'
 //
 // Refs / States
 //
-const { pane } = useTweakPane()
-
 const sampleStore = useSampleStore()
 
 const config = shallowReactive({
@@ -65,6 +64,8 @@ onMounted(async () => {
 // Methods
 //
 function createDebugPane() {
+  const pane = new Pane()
+
   pane.title = 'Configuration'
 
   pane.addBinding(gl, 'clearColor', { label: 'Clear Color', colorMode: 'hex' })
